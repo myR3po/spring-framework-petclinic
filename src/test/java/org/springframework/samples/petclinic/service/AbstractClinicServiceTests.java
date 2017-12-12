@@ -97,7 +97,7 @@ public abstract class AbstractClinicServiceTests {
     public void shouldUpdateOwner() {
         Owner owner = this.clinicService.findOwnerById(1);
         String oldLastName = owner.getLastName();
-        String newLastName = oldLastName + "X";
+        String newLastName = oldLastName + "X3";
 
         owner.setLastName(newLastName);
         this.clinicService.saveOwner(owner);
