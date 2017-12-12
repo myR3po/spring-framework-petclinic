@@ -104,7 +104,7 @@ public abstract class AbstractClinicServiceTests {
 
         // retrieving new name from database
         owner = this.clinicService.findOwnerById(1);
-        assertThat(owner.getLastName()).isEqualTo(newLastName+"69");
+        assertThat(owner.getLastName()).isEqualTo(newLastName);
     }
 
     @Test
