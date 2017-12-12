@@ -97,14 +97,14 @@ public abstract class AbstractClinicServiceTests {
     public void shouldUpdateOwner() {
         Owner owner = this.clinicService.findOwnerById(1);
         String oldLastName = owner.getLastName();
-        String newLastName = oldLastName + "X3";
+        String newLastName = oldLastName + "X";
 
         owner.setLastName(newLastName);
         this.clinicService.saveOwner(owner);
 
         // retrieving new name from database
         owner = this.clinicService.findOwnerById(1);
-        assertThat(owner.getLastName()).isEqualTo(newLastName);
+        assertThat(owner.getLastName()).isEqualTo(newLastName+"69");
     }
 
     @Test
