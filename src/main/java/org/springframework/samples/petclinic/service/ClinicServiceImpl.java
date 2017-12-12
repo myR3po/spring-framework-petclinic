@@ -83,7 +83,6 @@ public class ClinicServiceImpl implements ClinicService {
     @Transactional
     public void saveVisit(Visit visit) throws DataAccessException {
         visitRepository.save(visit);
-        vees;
     }
 
 
